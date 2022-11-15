@@ -2,16 +2,24 @@ class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) 
     {
-       for(int i = 0; i < nums.size(); i++)
-       {
-           for(int j = i+ 1; j < nums.size(); j++)
-           {
-               if(nums[i] == nums[j])
-                   return true;
-           }
-       }
+
+       sort(nums.begin(),nums.end());
+        // int i = 0;
+        // while (i < nums.size()-1)
+        // {
+        //     if(nums[i] == nums[i+1])
+        //         return true;
+        //     i++;
+        // }
+        for(int i = 0; i< nums.size()-1; i++)
+        {
+            if(nums[i] == nums[i+1])
+                return true;
+        }
         return false;
-        
     }
 };
-Status : TIme Limit Exceeded. Tried not to use sort function, which makes O(n^2). Search more code.. 
+// changed nested for loop -> sort();
+// while loop runtime : 235ms
+// for loop runtime : 104ms
+
