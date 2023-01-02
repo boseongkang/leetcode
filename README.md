@@ -1,5 +1,4 @@
 # leetcode using C++  
-test
 
 ## 1. Settings - SSH and GPG keys - New SSH key
 
