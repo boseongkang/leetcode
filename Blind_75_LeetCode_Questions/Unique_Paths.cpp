@@ -14,3 +14,6 @@ public:
         
     }
 };
+
+[leetcode 3.pdf](https://github.com/user-attachments/files/16022293/leetcode.3.pdf)
+
