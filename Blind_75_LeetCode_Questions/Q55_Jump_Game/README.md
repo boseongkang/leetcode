@@ -1,5 +1,4 @@
 Runtime is 41ms..
 
-<br>
-![leetcode-11](https://github.com/boseongkang/leetcode/assets/50917797/cb631797-7861-4070-872c-8d4ba474a809)
+![leetcode-11](https://github.com/boseongkang/leetcode/assets/50917797/eca12100-1199-4067-8dd0-eefa8873740b)
 
