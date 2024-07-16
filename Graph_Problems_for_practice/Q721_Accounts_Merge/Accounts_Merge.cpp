@@ -1,16 +1,13 @@
 class Solution {
 public:
     vector<int> parent;
-
     vector<vector<string>> accountsMerge(vector<vector<string>>& accounts) 
     {
         int n = accounts.size();
         parent.resize(n);
 
-        for(int i = 0; i <= n; ++i)
-        {
+        for(int i = 0; i < n; ++i)
             parent[i] = i;
-        }
 
         unordered_map<string, int> emailToidx;
 
@@ -24,7 +21,7 @@ public:
                     parent[find(i)] = find(emailToidx[email]);
                 }
                 else
-                    emailToidx[email] = 1;
+                    emailToidx[email] = i;
             }
         }
 
@@ -39,7 +36,7 @@ public:
         }
 
         vector<vector<string>> result;
-        for(auto& [i,email]:mergedAccounts)
+        for(auto& [i,emails]:mergedAccounts)
         {
             vector<string> account;
             account.push_back(accounts[i][0]);
@@ -47,9 +44,13 @@ public:
             sort(account.begin() + 1, account.end());
             result.push_back(account);
         }
+        return result;
+    }
 
-
-
-        
+    int find(int node)
+    {
+        if(parent[node] != node)
+            parent[node] = find(parent[node]);
+        return parent[node];
     }
 };
