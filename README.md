@@ -19,9 +19,3 @@
 ## Generate new token – clasic
 ## Select 'repo', 'admin:repo_hook', 'delete_repo' but its optional
 ## Generate token – paste in to terminal after 'git push -u'
-
-<<<<<<< HEAD
-=======
-test
-test2
->>>>>>> 3f35e77 (test2)
