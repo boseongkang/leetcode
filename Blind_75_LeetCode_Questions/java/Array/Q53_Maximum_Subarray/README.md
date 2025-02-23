@@ -2,7 +2,7 @@
 
 <br>
 divide and conquer algorithm
-![Image](https://github.com/user-attachments/assets/1e7136d8-46b1-4fe3-abbe-978d1c644cb1)
+![Image](https://github.com/user-attachments/assets/18ae0934-e1e5-4039-9142-450622947714)
 <br>
 <br>
 divide and conquer version
